@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopstar</title>
+
+    <!--Linking font awesome to our code-->
+    <!-- In cdn i.e content delivery network,we want to use font awesome library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Linking style.css-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="img/s-logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border"><!--Component of navbar-->
+                <div class="logo"> </div>
+
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                    <option>Smartphones</option>
+                    <option>Electronics</option>
+                    <option>Books</option>
+                    <option>New Arrivals in Toys</option>
+                    <option>Health & Personal Care</option>
+                    <option>Fabrics</option>
+                    <option>Furniture</option>
+                    <option>Fashion</option>
+                </select>
+                <input placeholder="Search Shopstar" class="search-input" id="searchInput" oninput="searchProducts()">
+                
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div id="result"></div>
+            </div>
+
+            <div class="nav-signin border">
+                <p><span class="ddt">Hello,sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div> <!--Div of navbar ends here-->
+
+        <div class="panel"> <!--Div of panel starts here-->
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Gift Card</p>
+                <p>Sell</p>
+            </div>
+
+            <div class="panel-deals">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+
+    <div class="imp-section">
+        <div class="imp-msg">
+            <p>You are on shopstar.com.Get exciting rewards on first purchase and a <span class="ddf">coupon on an order
+                    of 3 products</span></p>
+        </div>
+    </div>
+
+    <div class="shop-section">
+
+        <div class="box">
+            <!--This box1 layout is designed and copy-pasted to create other boxes.Just changing the headings and background image-->
+            
+            <div class="box-content smart" >
+                <h2>Smartphones</h2>
+                <div class="box-img" style="background-image: url('img/box4_image.jpg');"></div>
+                <p>See more</p>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content elec">
+                <h2>Electronics</h2>
+                <div class="box-img" style="background-image: url('img/box_x.png');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content books">
+                <h2>Books</h2>
+                <div class="box-img" style="background-image: url('img/books.webp');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content toys">
+                <h2>New Arrivals in Toys</h2>
+                <div class="box-img" style="background-image: url('img/box7_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content care">
+                <h2>Health & Personal Care</h2>
+                <div class="box-img" style="background-image: url('img/box2_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Fabrics</h2>
+                <div class="box-img" style="background-image: url('img/box1_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Furniture</h2>
+                <div class="box-img" style="background-image: url('img/box3_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="box-content">
+                <h2>Fashion</h2>
+                <div class="box-img" style="background-image: url('img/box8_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+    </div>
+
+  <script src="JS/script.js"></script>
+  <script src="JS/search.js"></script>
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

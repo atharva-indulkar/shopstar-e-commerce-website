@@ -1,0 +1,68 @@
+body {
+    background-color: #0a0e3e; /*Dark Blue Background Color */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 32px;
+    background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background: #ff6600; /* Orange Button Background Color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: #ff4400; /* Darker Orange on Hover */
+}
+
+.message {
+    color: #ff4400; /* Orange Message Color */
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #007BFF;
+}

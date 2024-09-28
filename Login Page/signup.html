@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopStar Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="../img/s-logo.png">
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="shopstar_logo.png" class="img"> -->
+        <h1>ShopStar</h1>
+        <form>
+            <div class="input-group">
+                <input type="text" name="email-phone" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="text" name="email-phone" class="phoneNumber" placeholder="Phone Number" required maxlength="10">
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" class="password" placeholder="Password" required  minlength="8" maxlength="15">
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" class="confirmPassword" placeholder="Confirm Password" required  minlength="8" maxlength="15">
+            </div>
+            <input type="submit" value="Sign Up" class="signup">
+        </form>
+        <!-- <p class="message">Invalid username or password</p> -->
+        <a class="forgot-password" href="forget.html">Forgot Password?</a>
+        <a class="message" href="login.html">Login</a>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

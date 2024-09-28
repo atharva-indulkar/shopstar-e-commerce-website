@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    /*Initially,we dont want any border,we from ourside will give the border if required */
+    font-family: Arial;
+    /*We will use Arial font */
+    border: border-box;
+    /*Padding,border-size will be counted in its heght and width i.e padding and border area which will be given will be counted inside the height and width.So,if padding or border area is increased,thn the conten arae will decrease.This "border-box" property is used to fix a space for ana element */
+
+}
+
+.navbar{
+    height: 3.75rem;
+    background-color: rgb(0, 221, 255); /*#0f1111*/
+    color : rgb(12,5,5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    height: 3.125rem;
+    width: 6.25rem;
+}
+.logo{
+    background-image: url("img/shopstar_logo.png");
+    background-size: cover;
+    height: 3.125rem;
+    width: 100%;
+}
+
+.border{
+    border: 2px solid transparent;
+
+}
+
+.border:hover{ /*To get a border when we hover */
+    border: 0.125rem solid rgb(11, 11, 11);
+    padding: .5rem .3rem;
+    border-radius: 1rem;
+}
+
+/* box 2 */
+.add-first{
+    color: #120a0a;
+    font-size: 0.85rem; /*All the fonts will be set in comparison to root-fontsize.We are using rem to make the website responsive */
+    margin-left: 0.983rem;
+
+}
+
+.add-second{
+    font-size: 1rem;
+    margin-left: 0.188rem;
+}
+
+.nav-address{
+    margin-left: 0.313rem;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+/*box3 */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 38.75rem;
+    height: 1.875rem;
+    border-radius: .25rem;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 38.75rem; /* Fixed width */
+    position: relative;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 3.125rem;
+    text-align: center;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    padding: .5rem;
+}
+
+.search-input{
+    width: 38.75rem;
+    font-size: 1rem;
+    border: none;
+    min-width: 200px; /* Ensure it doesn't shrink too much */
+    width: 100%; /* Fill the parent */
+    font-size: 1rem;
+    /* border: 1px solid #ccc; Border for visibility */
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    padding: 0.5rem; 
+    /* background-color: transparent;  */
+}
+
+.search-icon{
+    width: 2.813rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    color: #0f1111;
+    padding: .5rem;
+}
+
+.nav-search:hover{
+    border: 0.125rem solid orange;
+}
+
+/*box4*/
+.ddt{
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700; /*font-weight means darkness*/
+}
+
+/*box5*/
+.nav-cart i{/*To apply styling to the icon in the nav-cart class */
+    font-size: 1.875rem;
+
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/*panel*/
+.panel{
+    height: 2.5rem;
+    background-color: #272725;/*#222f3d*/
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p{
+    display: inline;
+    margin-left: 0.938rem;
+}
+
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals{
+    font-size: 0.93rem;
+    font-weight: 700;
+}
+
+/*imp-section*/
+.imp-section{
+    background-image: url("img/imp_image.jpg");
+    background-size: cover;
+    height: 19.375rem; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.imp-msg{
+    background-color: white;
+    color: black;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.188rem;
+}
+
+.ddf{
+    color: red;
+    font-weight: 1500;
+}
+
+/*shop-section*/
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.box{
+    height: 25rem;
+    border: 0.125rem solid transparent;
+    width: 23%;
+    background-color: white;
+    padding: 1.25rem 0rem 0.125rem;
+    margin-top: 0.313rem;
+    border-bottom-right-radius: 3.125rem;
+    border-bottom-left-radius: 3.125rem;
+    border-top-right-radius: 1.875rem;
+    border-top-left-radius: 1.875rem;
+    cursor: pointer;
+    animation: pop 3s ease;
+}
+
+.box:hover{
+    border: 0.125rem solid black;
+}
+
+.box-img{
+    height: 18.75rem;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content p{
+    color: #007185;
+}
+@keyframes pop {
+    0%{
+        transform: scaleX(0);
+        /* opacity: 0; */
+    }
+    100%{
+        transform: scaleX(1);
+        /* opacity: 1; */
+    }
+}
+
+
+/* #result {
+    position: relative;
+    top: 3rem;
+    right: 27rem;
+} */
+
+#result {
+    position: absolute; /* Overlay the results */
+    top: 100%; /* Below the search input */
+    left: 0;
+    right: 0; /* Align with the search input */
+    background-color: white; /* Background color for results */
+    border: 1px solid #ccc; /* Border for visibility */
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: none; 
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.match {
+    color: red;
+    font-weight: bold;
+}
+
+
+.search-result-item {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.search-result-item:hover {
+    background-color: #f3f3f3;
+}
